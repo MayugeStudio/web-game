@@ -34,6 +34,19 @@
     margin: 0 2em;
 }
 
+.site-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-aside {
+    margin: 0.5em;
+}
+
+.site-aside-ul {
+    list-style-type: square;
+}
+
 .site-footer-text {
     margin: 1em;
 }
