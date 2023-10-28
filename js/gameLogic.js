@@ -3,15 +3,18 @@
  * @param {string} text
  * @return {number} text length
  */
-const length = text => text.length;
+function length(text) {
+  return text.length;
+}
 
 /**
  * No space string
  * @param {string} text
  * @return {string} no space string
  */
-const noSpaceString = text => text.replaceAll(' ', '');
-
+function noSpaceString(text) {
+  return text.replaceAll(' ', '');
+}
 
 const initializeGame = () => {
   addClickListener(`continueButton`, () => {
