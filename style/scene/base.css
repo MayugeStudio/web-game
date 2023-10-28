@@ -28,14 +28,6 @@
     flex-direction: column;
     width: calc(100% / 3);
     margin: 0.5em;
-    border: 0.1rem solid #ccc;
-    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-
-.selection:hover {
-    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.6);
-    transition: box-shadow 0.2s ease;
 }
 
 .selection-difficulty-text {

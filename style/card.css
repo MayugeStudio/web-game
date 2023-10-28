@@ -1,0 +1,11 @@
+.card {
+    border: 0.1rem solid #CCC;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    image-rendering: pixelated;
+}
+
+.card:hover {
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.2s ease;
+}
