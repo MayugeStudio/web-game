@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="Text Based RPG Game">
+    <meta name="Game RPG RougeLike">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TextBasedRPG</title>
     <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./style/site.css">
@@ -12,27 +15,30 @@
 </head>
 <body class="site-body">
 <header class="site-header">
-    <img src="./assets/mayuge.png" alt="mayuge" class="site-header-logo">
+    <img src="./assets/mayuge.png" alt="Mayuge Icon" class="site-header-logo">
     <h1 class="site-header-text font-size-3-5rem">GameName</h1>
 </header>
 <main class="site-main">
     <!-- Title Scene -->
-    <div id="title" class="scene title-scene">
-        <div class="title-scene-content">
+    <section id="title" class="scene title-scene">
+        <!-- Content -->
+        <section class="title-scene-content">
             <div class="title-scene-background-image">DEMO-IMAGE</div>
             <label class="title-scene-input-label">
                 <input id="nameInput" class="title-scene-input font-size-2-5rem" type="text" name="playerName"
                        placeholder="ここに名前を入力">
             </label>
             <button id="continueButton" class="title-scene-button font-size-2-5rem">はじめる</button>
-        </div>
-    </div>
+        </section>
+    </section>
     <!-- Setup Scene -->
-    <div id="setup" class="scene setup-scene"></div>
+    <section id="setup" class="scene setup-scene"></section>
     <!-- Base Scene -->
-    <div id="base" class="scene base-scene">
-        <div class="base-scene-header font-size-4rem">拠点</div>
-        <div class="base-scene-content">
+    <section id="base" class="scene base-scene">
+        <!-- Header -->
+        <h2 class="base-scene-header font-size-4rem">拠点</h2>
+        <!-- Content -->
+        <section class="base-scene-content">
             <!-- Player Inventory -->
             <div id="playerInventory" class="walk-scene-menu font-size-1-5rem">
                 <p class="health-text">体力</p>
@@ -63,25 +69,25 @@
                     <p class="selection-direction">みぎ</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
     <!-- Road Choice Scene -->
-    <div id="roadChoice" class="scene road-choice-scene"></div>
+    <section id="roadChoice" class="scene road-choice-scene"></section>
     <!-- Battle Scene -->
-    <div id="battle" class="scene battle-scene"></div>
+    <section id="battle" class="scene battle-scene"></section>
     <!-- Treasure Scene -->
-    <div id="treasure" class="scene treasure-scene"></div>
+    <section id="treasure" class="scene treasure-scene"></section>
 </main>
+<!-- Modal -->
 <div id="modal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
         <p id="modalMessage" class="modal-message"></p>
     </div>
 </div>
-<div class="site-footer-container">
-    <footer class="site-footer font-size-1-5rem">
-        <p class="site-footer-text">Developer: Mayuge</p>
-    </footer>
+<!-- Footer -->
+<footer class="site-footer">
+    <p class="site-footer-text">Developer: Mayuge</p>
     <aside class="site-aside">
         <!-- Social Links -->
         <ul class="site-aside-ul">
@@ -90,7 +96,8 @@
             <li class="site-aside-link"><a href="https://zenn.dev/mayuge" target="_blank" rel="noopener noreferrer">Zenn</a></li>
         </ul>
     </aside>
-</div>
+</footer>
+<!-- Scripts -->
 <script src="./js/constants.js"></script>
 <script src="./js/utils.js"></script>
 <script src="./js/modal.js"></script>
