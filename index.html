@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TextBasedRPG</title>
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/site.css">
+    <link rel="stylesheet" href="./style/title_scene.css">
+    <link rel="stylesheet" href="./style/base_scene.css">
+    <link rel="stylesheet" href="./style/modal.css">
+</head>
+<body class="site-body">
+<header class="site-header">
+    <img src="./assets/mayuge.png" alt="mayuge" class="site-header-logo">
+    <h1 class="site-header-text font-size-3-5rem">GameName</h1>
+</header>
+<main class="site-main">
+    <!-- Title Scene -->
+    <div id="title" class="scene title-scene">
+        <div class="title-scene-content">
+            <div class="title-scene-background-image">DEMO-IMAGE</div>
+            <label class="title-scene-input-label">
+                <input id="nameInput" class="title-scene-input font-size-2-5rem" type="text" name="playerName"
+                       placeholder="ここに名前を入力">
+            </label>
+            <button id="continueButton" class="title-scene-button font-size-2-5rem">はじめる</button>
+        </div>
+    </div>
+    <!-- Setup Scene -->
+    <div id="setup" class="scene setup-scene"></div>
+    <!-- Base Scene -->
+    <div id="base" class="scene base-scene">
+        <div class="base-scene-header font-size-4rem">拠点</div>
+        <div class="base-scene-content">
+            <!-- Player Inventory -->
+            <div id="playerInventory" class="walk-scene-menu font-size-1-5rem">
+                <p class="health-text">体力</p>
+                <p id="menuHealth" class="health-value">10/100</p>
+                <p class="attack-text">ATTACK</p>
+                <p id="menuAttack" class="attack-value">10</p>
+                <p class="defense-text">DEFENSE</p>
+                <p id="menuDefense" class="defense-value">9</p>
+                <p class="speed-text">SPEED</p>
+                <p id="menuSpeed" class="speed-value">8</p>
+                <button id="inventoryButton" class="menu-button1 font-size-2rem animation-button">持ち物</button>
+                <button id="reinforceButton" class="menu-button2 font-size-2rem animation-button">強化</button>
+            </div>
+            <div id="map" class="base-scene-main">
+                <div class="selection font-size-2-5rem">
+                    <p class="selection-difficulty-text">はーど</p>
+                    <p class="selection-difficulty-number">10</p>
+                    <p class="selection-direction">ひだり</p>
+                </div>
+                <div class="selection font-size-2-5rem">
+                    <p class="selection-difficulty-text">ふつう</p>
+                    <p class="selection-difficulty-number">5</p>
+                    <p class="selection-direction">まっすぐ</p>
+                </div>
+                <div class="selection font-size-2-5rem">
+                    <p class="selection-difficulty-text">かんたん</p>
+                    <p class="selection-difficulty-number">3</p>
+                    <p class="selection-direction">みぎ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Road Choice Scene -->
+    <div id="roadChoice" class="scene road-choice-scene"></div>
+    <!-- Battle Scene -->
+    <div id="battle" class="scene battle-scene"></div>
+    <!-- Treasure Scene -->
+    <div id="treasure" class="scene treasure-scene"></div>
+</main>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalMessage" class="modal-message"></p>
+    </div>
+</div>
+<footer class="site-footer font-size-1-5rem">
+    <p class="site-footer-text">Developer: Mayuge</p>
+</footer>
+<script src="./js/constants.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/modal.js"></script>
+<script src="./js/models.js"></script>
+<script src="./js/gameLogic.js"></script>
+<script src="./js/ui.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+.base-scene {
+    --difficulty-text-background-color: rgb(55, 98, 60);
+    --difficulty-value-text-background-color: rgb(155, 120, 60);
+    text-align: center;
+}
+
+.base-scene-content {
+    display: flex;
+    align-items: center;
+    min-width: 80vw;
+    height: 100%;
+}
+
+.base-scene-header {
+    margin: 1em 0;
+}
+
+.base-scene-main {
+    min-width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    margin: 0.5em;
+    border: 0.1rem solid #ccc;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.selection:hover {
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.2s ease;
+}
+
+.selection-difficulty-text {
+    background-color: var(--difficulty-text-background-color);
+    padding: 0.5em;
+}
+
+.selection-difficulty-number {
+    padding: 0.5em;
+}
+
+.selection-direction {
+    background-color: var(--difficulty-value-text-background-color);
+    padding: 0.5em;
+}
+
+.walk-scene-menu {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    min-width: 20%;
+    background-color: brown;
+    margin: 0 1em;
+}
+
+.health-text, .attack-text, .defense-text, .speed-text {
+    min-width: 6rem;
+    margin: 0.5em;
+}
+
+.health-value {
+    margin: 0.5em;
+    text-align: center;
+}
+
+.attack-value, .defense-value, .speed-value {
+    margin: 0.5em;
+    text-align: right;
+}
+
+.health-text {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.attack-text {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.defense-text {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.speed-text {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.health-value {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.attack-value {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.defense-value {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.speed-value {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.menu-button1 {
+    grid-row: 5;
+    grid-column: 1 / 3;
+    min-width: calc(100% / 3);
+    padding: 0.5em;
+}
+
+.menu-button2 {
+    grid-row: 6;
+    grid-column: 1 / 3;
+    min-width: calc(100% / 3);
+    padding: 0.5em;
+}

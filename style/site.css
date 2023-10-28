@@ -1,0 +1,39 @@
+.site-body {
+    display: flex;
+    flex-direction: column;
+    background-color: #bfb;
+}
+
+.site-header {
+    box-sizing: border-box;
+    display: flex;
+    background-color: var(--header-bg-color);
+    border: 0.3rem solid var(--header-border-color);
+}
+
+.site-header-logo {
+    width: 5rem;
+    margin: 1em 1em;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 0.2rem solid black;
+}
+
+.site-header-text {
+    color: white;
+    margin: auto;
+}
+
+.site-main {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border-width: 0 0.3rem 0.3rem 0.3rem;
+    border-style: solid;
+    border-color: #ccc;
+    min-height: 35rem;
+    margin: 0 2em;
+}
+
+.site-footer-text {
+    margin: 1em;
+}

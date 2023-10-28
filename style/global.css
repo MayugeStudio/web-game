@@ -1,0 +1,50 @@
+:root {
+    --scene-width-multiplier: 7;
+    --text-color: hsl(0 0% 100%);
+    --bg-color: hsl(26, 67%, 76%);
+    --primary-color: hsl(63 40% 66%);
+    --secondary-color: hsl(105 20% 54%);
+    --spooky-color: hsl(239, 20%, 54%);
+    --header-bg-color: hsl(164 44% 25%);
+    --header-border-color: hsl(164 44% 20%)
+}
+
+@font-face {
+    font-family: "PixelFont";
+    src: url("../assets/PixelMplus12-Regular.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "PixelFont", sans-serif;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+.animation-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.font-size-4rem {
+    font-size: 4rem;
+}
+
+.font-size-3-5rem {
+    font-size: 3.5rem;
+}
+
+.font-size-2-5rem {
+    font-size: 2.5rem;
+}
+
+.font-size-2rem {
+    font-size: 2rem;
+}
+
+.font-size-1-5rem {
+    font-size: 1.5rem;
+}
