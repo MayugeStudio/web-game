@@ -1,0 +1,2 @@
+// Variables
+let currentScene = 'title';

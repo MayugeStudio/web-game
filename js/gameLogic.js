@@ -12,8 +12,6 @@ const length = text => text.length;
  */
 const noSpaceString = text => text.replaceAll(' ', '');
 
-// Variables
-let currentScene = 'title';
 
 const initializeGame = () => {
   addClickListener(`continueButton`, () => {
