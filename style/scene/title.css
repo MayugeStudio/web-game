@@ -20,7 +20,7 @@
 .title-scene-background-image {
     width: calc(5rem * var(--scene-width-multiplier));
     height: calc(3rem * var(--scene-width-multiplier));
-    background-image: url("../../assets/demo.png");
+    background-image: url("../../assets/image/demo.png");
     background-size: cover;
     background-position: center;
     border-radius: 0.25rem;
