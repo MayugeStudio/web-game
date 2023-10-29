@@ -1,4 +1,8 @@
+/**
+ * Toggle Scene
+ * @param {HTMLElement} scene
+ */
 function toggleScene(scene) {
-  const display = scene.style.display;
-  scene.style.display = display === 'none' ? 'block' : 'none';
+  const display = window.getComputedStyle(scene, null).display;
+  scene.style.display = (display === 'none' || display === '') ? 'block' : 'none';
 }
