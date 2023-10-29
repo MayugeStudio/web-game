@@ -21,6 +21,9 @@ const initializeGame = () => {
     const input = document.getElementById(`nameInput`);
     if (length(noSpaceString(input.value)) === 0) {
       showModal('名前を入力してください');
+    } else {
+      toggleScene(title);
+      toggleScene(base);
     }
   });
 };
