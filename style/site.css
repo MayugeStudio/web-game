@@ -12,8 +12,8 @@
 }
 
 .site-header-logo {
-    width: 5rem;
-    margin: 1em 1em;
+    width: 4.5rem;
+    margin: 0.5em;
     background-color: #fff;
     border-radius: 0.5rem;
     border: 0.2rem solid black;
@@ -25,18 +25,19 @@
 }
 
 .site-main {
+    min-height: var(--site-main-height);
     color: var(--text-color);
     background-color: var(--secondary-color);
-    border-width: 0 0.3rem 0.3rem 0.3rem;
+    border-width: 0.3em 0.3em 0.3em 0.3em;
     border-style: solid;
     border-color: #ccc;
-    min-height: 35rem;
-    margin: 0 2em;
+    margin: 1em 1em 0 1em;
 }
 
 .site-footer {
     display: flex;
     align-items: center;
+    margin-top: 0;
 }
 
 .site-aside {
@@ -49,5 +50,5 @@
 
 .site-footer-text {
     font-size: 1.5em;
-    margin: 1em;
+    margin: 0.5em;
 }

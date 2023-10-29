@@ -1,3 +1,4 @@
 .scene {
-
+    display: none;
+    height: var(--site-main-height);
 }

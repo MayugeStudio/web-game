@@ -10,20 +10,29 @@
     --font-color-hover: hsl(0 0% 95%);
     --font-color-active: hsl(0 0% 85%);
     --text-shadow-color: hsl(10 0% 20%);
+    text-align: center;
 }
+
 .title-scene-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.title-scene-content > * {
+    width: calc(5rem * var(--scene-width-multiplier));
 }
 
 .title-scene-background-image {
-    width: calc(5rem * var(--scene-width-multiplier));
+    display: flex;
     height: calc(3rem * var(--scene-width-multiplier));
     background-image: url("../../assets/image/demo.png");
     background-size: cover;
     background-position: center;
-    border-radius: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
 }
 
 .title-scene-input {
@@ -33,7 +42,7 @@
     background-color: hsl(0, 0%, 95%);
     width: 100%;
     padding: 0.25rem 0;
-    text-align: center;
+    text-align: inherit;
 }
 
 .title-scene-input:focus {
@@ -41,12 +50,12 @@
 }
 
 .title-scene-button {
+    box-sizing: border-box;
+    flex-grow: 1;
     color: var(--text-color);
-    text-shadow: 0.1rem 0.1rem var(--text-shadow-color);
     background-color: var(--button-background-color);
+    text-shadow: 0.1rem 0.1rem var(--text-shadow-color);
     border: 0.2rem solid var(--button-border-color);
-    border-radius: 0 0 0.25rem 0.25rem;
-    padding: 1em 5em;
 }
 
 .title-scene-button:hover {
