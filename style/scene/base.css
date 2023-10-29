@@ -6,6 +6,7 @@
 
 .base-scene-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     min-width: 80vw;
 }
@@ -13,7 +14,6 @@
 .base-scene-header {
     margin: 0.2em;
 }
-
 
 .base-scene-stat-menu {
     display: grid;
@@ -78,9 +78,41 @@
     grid-column: 2;
 }
 
+.base-scene-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 1em;
+}
+
 .menu-button {
     color: var(--font-color);
     background-color: var(--difficulty-text-background-color);
     font-size: inherit;
     padding: 0.5em;
+}
+
+.menu-button-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.menu-button-2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.menu-button-3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.menu-button-4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.menu-button-5 {
+    grid-column: 1 / 3;
+    grid-row: 3;
 }
