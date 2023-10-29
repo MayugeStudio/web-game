@@ -1,6 +1,6 @@
 // Scenes
-const title = document.getElementById(`title`);
-const base = document.getElementById(`base`);
+const title = document.getElementById(`titleScene`);
+const base = document.getElementById(`baseScene`);
 
 // Modal
 const modal = document.getElementById(`modal`);

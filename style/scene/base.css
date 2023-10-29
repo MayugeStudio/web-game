@@ -14,30 +14,6 @@
     margin: 0.2em;
 }
 
-.base-scene-map-selection {
-    display: flex;
-    flex-direction: column;
-}
-
-.selection {
-    display: flex;
-    flex-direction: column;
-    margin: 0.2em;
-}
-
-.selection-difficulty-text {
-    background-color: var(--difficulty-text-background-color);
-    padding: 0.2em 0.5em;
-}
-
-.selection-difficulty-number {
-    padding: 0.2em 0.5em;
-}
-
-.selection-direction {
-    background-color: var(--difficulty-value-text-background-color);
-    padding: 0.5em;
-}
 
 .base-scene-stat-menu {
     display: grid;
@@ -102,16 +78,9 @@
     grid-column: 2;
 }
 
-.menu-button1 {
-    grid-row: 5;
-    grid-column: 1 / 3;
-    min-width: calc(100% / 3);
-    padding: 0.5em;
-}
-
-.menu-button2 {
-    grid-row: 6;
-    grid-column: 1 / 3;
-    min-width: calc(100% / 3);
+.menu-button {
+    color: var(--font-color);
+    background-color: var(--difficulty-text-background-color);
+    font-size: inherit;
     padding: 0.5em;
 }

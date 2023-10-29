@@ -1,0 +1,23 @@
+.map-selection-scene-content {
+    display: flex;
+    flex-direction: column;
+}
+.selection {
+    display: flex;
+    flex-direction: column;
+    margin: 0.2em;
+}
+
+.selection-difficulty-text {
+    background-color: var(--difficulty-text-background-color);
+    padding: 0.2em 0.5em;
+}
+
+.selection-difficulty-number {
+    padding: 0.2em 0.5em;
+}
+
+.selection-direction {
+    background-color: var(--difficulty-value-text-background-color);
+    padding: 0.5em;
+}

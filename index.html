@@ -23,7 +23,7 @@
 <!-- Main Content -->
 <main class="site-main">
     <!-- Title Scene -->
-    <section id="title" class="scene title-scene">
+    <section id="titleScene" class="scene title-scene">
         <!-- Content -->
         <section class="title-scene-content">
             <div class="title-scene-background-image">DEMO-IMAGE</div>
@@ -36,9 +36,9 @@
         </section>
     </section>
     <!-- Setup Scene -->
-    <section id="setup" class="scene setup-scene"></section>
+    <section id="setupScene" class="scene setup-scene"></section>
     <!-- Base Scene -->
-    <section id="base" class="scene base-scene">
+    <section id="baseScene" class="scene base-scene">
         <!-- Header -->
         <h2 class="base-scene-header normal-font-weight font-size-4rem">拠点</h2>
         <!-- Content -->
@@ -53,31 +53,40 @@
                 <p id="menuDefense" class="defense-value">9</p>
                 <p class="speed-text">SPEED</p>
                 <p id="menuSpeed" class="speed-value">8</p>
-                <button id="inventoryButton" class="menu-button1 font-size-2rem animation-button">持ち物</button>
-                <button id="reinforceButton" class="menu-button2 font-size-2rem animation-button">強化</button>
             </div>
-            <div id="mapSelection" class="base-scene-map-selection">
-                <div class="selection card font-size-2rem">
-                    <p class="selection-difficulty-text">はーど</p>
-                    <p class="selection-difficulty-number">10</p>
-                </div>
-                <div class="selection card font-size-2rem">
-                    <p class="selection-difficulty-text">ふつう</p>
-                    <p class="selection-difficulty-number">5</p>
-                </div>
-                <div class="selection card font-size-2rem">
-                    <p class="selection-difficulty-text">かんたん</p>
-                    <p class="selection-difficulty-number">3</p>
-                </div>
+            <!-- Menu -->
+            <div id="menu" class="base-scene-menu font-size-2rem">
+                <button id="inventoryButton" class="menu-button card">持ち物</button>
+                <button id="reinforceButton" class="menu-button card">強化</button>
+                <button id="mapSelectionButton" class="menu-button card">マップ選択</button>
             </div>
+            <!-- Map Selection -->
         </section>
     </section>
+    <!-- Map Selection Scene -->
+    <section id="mapSelectionScene" class="scene map-selection-scene">
+        <div class="map-selection-scene-content">
+            <h2 class="normal-font-weight font-size-2rem">マップ選択</h2>
+            <div class="selection card font-size-2rem">
+                <p class="selection-difficulty-text">はーど</p>
+                <p class="selection-difficulty-number">10</p>
+            </div>
+            <div class="selection card font-size-2rem">
+                <p class="selection-difficulty-text">ふつう</p>
+                <p class="selection-difficulty-number">5</p>
+            </div>
+            <div class="selection card font-size-2rem">
+                <p class="selection-difficulty-text">かんたん</p>
+                <p class="selection-difficulty-number">3</p>
+            </div>
+        </div>
+    </section>
     <!-- Road Choice Scene -->
-    <section id="roadChoice" class="scene road-choice-scene"></section>
+    <section id="roadChoiceScene" class="scene road-choice-scene"></section>
     <!-- Battle Scene -->
-    <section id="battle" class="scene battle-scene"></section>
+    <section id="battleScene" class="scene battle-scene"></section>
     <!-- Treasure Scene -->
-    <section id="treasure" class="scene treasure-scene"></section>
+    <section id="treasureScene" class="scene treasure-scene"></section>
 </main>
 <!-- Modal Dialog -->
 <div id="modal" class="modal">
