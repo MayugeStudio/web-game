@@ -44,7 +44,7 @@
     padding: 0.5em;
 }
 
-.walk-scene-menu {
+.base-scene-stat-menu {
     display: grid;
     grid-template-columns: 6rem 1fr;
     min-width: 20%;
