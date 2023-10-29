@@ -1,3 +1,3 @@
 function setupModal() {
-  addClickListener(`.close`, hideModal);
+  addClickListener(`modalClose`, hideModal);
 }
