@@ -1,7 +1,7 @@
 :root {
     --scene-width-multiplier: 7;
     --site-main-height: 70vh;
-    --text-color: hsl(0 0% 100%);
+    --font-color: hsl(0 0% 100%);
     --bg-color: hsl(26, 67%, 76%);
     --primary-color: hsl(63 40% 66%);
     --secondary-color: hsl(105 20% 54%);
