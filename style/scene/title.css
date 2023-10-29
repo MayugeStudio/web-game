@@ -58,12 +58,6 @@
     border: 0.2rem solid var(--button-border-color);
 }
 
-.title-scene-button:hover {
-    color: var(--font-color-hover);
-    background-color: var(--button-background-color-hover);
-    border-color: var(--button-border-color-hover);
-}
-
 .title-scene-button:active {
     color: var(--font-color-active);
     background-color: var(--button-background-color-active);
